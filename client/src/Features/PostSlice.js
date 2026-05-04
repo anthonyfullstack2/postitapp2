@@ -41,7 +41,8 @@ export const likePost = createAsyncThunk("posts/likePost", async (postData) => {
   try {
     //Pass along the URL the postId
     const response = await axios.put(
-      `http://localhost:3001/likePost/${postData.postId}`,
+      //`http://localhost:3001/likePost/${postData.postId}`,
+      `${ENV.SERVER_URL}/likePost/${postData.postId}`,
       {
         userId: postData.userId,
       }
