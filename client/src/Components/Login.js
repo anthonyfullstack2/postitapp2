@@ -62,7 +62,7 @@ const Login = () => {
           <Row>
             <Col md={3}>
               <FormGroup>
-                <Label for="email">Email</Label>
+                <Label for="email">Email - Anthony</Label>
                 <Input
                   id="email"
                   name="email"
